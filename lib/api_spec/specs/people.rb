@@ -448,6 +448,19 @@ class ApiSpec::Spec
       end
     end
 
+    people.method('Add') do |method|
+      method.synopsis = "Updates a matched person (without overriding data) or creates a new one if the person doesn't exist"
+      method.http_method = "PUT"
+      method.uri = "/people/add"
+
+      method.parameter('body') do |p|
+        p.required = 'Y'
+        p.default = '{}'
+        p.type = 'json'
+        p.description = 'JSON attributes for updating/matching the person'
+      end
+    end
+
     people.method('Destroy') do |method|
       method.synopsis = "Removes the person with the matching ID"
       method.http_method = "DELETE"
