@@ -477,7 +477,7 @@ class ApiSpec::Spec
       end
     end
 
-    people.method('Create Private Note') do |method|
+    people.method('Private Note Create') do |method|
       method.synopsis = "Creates a private note for the given person"
       method.http_method = "POST"
       method.uri = "/people/:id/notes"
