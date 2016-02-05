@@ -60,7 +60,7 @@ class ApiSpec::Spec
         p.required = 'N'
         p.default = '1'
         p.type = 'int'
-        p.description = 'the external id of the post'
+        p.description = 'the external id of the blog post'
       end
     end
 
@@ -133,7 +133,7 @@ class ApiSpec::Spec
       m.parameter('blog_post_id') do |p|
         p.required = 'Y'
         p.type = 'int'
-        p.description = 'the ID of the blog'
+        p.description = 'the ID of the blog post'
       end
 
       m.parameter('body') do |p|
@@ -164,7 +164,7 @@ class ApiSpec::Spec
       m.parameter('blog_post_id') do |p|
         p.required = 'Y'
         p.type = 'int'
-        p.description = 'the ID of the blog'
+        p.description = 'the ID of the blog post'
       end
     end
   end
