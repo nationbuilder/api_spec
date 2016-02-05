@@ -64,6 +64,30 @@ class ApiSpec::Spec
       end
     end
 
+    bp.method('Show') do |m|
+      m.synopsis = 'Show the details of a blog post'
+      m.http_method = 'GET'
+      m.uri = '/sites/:site_slug/pages/blogs/:blog_id/posts/:blog_post_id'
+
+      m.parameter('site_slug') do |p|
+        p.required = 'Y'
+        p.type = 'string'
+        p.description = 'the site holding the blog'
+      end
+
+      m.parameter('blog_id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'the ID of the blog'
+      end
+
+      m.parameter('blog_post_id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'the ID of the blog post'
+      end
+    end
+
     bp.method('Create') do |m|
       m.synopsis = 'Creates a new blog post'
       m.http_method = 'POST'
