@@ -7,7 +7,7 @@
           "MethodName": "Index",
           "Synopsis": "Shows the list of automation enrollments",
           "HTTPMethod": "GET",
-          "URI": "/v1/automation/:id/automation_enrollment/",
+          "URI": "/v1/automations/:id/automation_enrollments/",
           "parameters": [
             {
               "Name": "id",
@@ -37,7 +37,7 @@
           "MethodName": "Destroy",
           "Synopsis": "Destroy a specific Automation Enrollment based on the signup",
           "HTTPMethod": "DELETE",
-          "URI": "/v1/automation/:id/automation_enrollment/",
+          "URI": "/v1/automations/:id/automation_enrollments/",
           "parameters": [
             {
               "Name": "signup_id",

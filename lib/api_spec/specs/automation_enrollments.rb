@@ -1,11 +1,11 @@
 class ApiSpec::Spec
 
-  endpoint 'Automation Enrollments' do |automation_enrollment|
+  endpoint 'Automation Enrollments' do |automation_enrollments|
 
-    automation_enrollment.method('Index') do |method|
+    automation_enrollments.method('Index') do |method|
       method.synopsis = 'Shows the list of automation enrollments'
       method.http_method = 'GET'
-      method.uri = '/v1/automation/:id/automation_enrollment/'
+      method.uri = '/v1/automations/:id/automation_enrollments/'
 
       method.parameter('id') do |p|
         p.required = 'Y'
@@ -14,7 +14,7 @@ class ApiSpec::Spec
       end
     end
 
-    automation_enrollment.method('Create') do |method|
+    automation_enrollments.method('Create') do |method|
       method.synopsis = 'Creates an automation enrollment with the provided data'
       method.http_method = 'POST'
       method.uri = '/v1/automation_enrollments'
@@ -26,10 +26,10 @@ class ApiSpec::Spec
       end
     end
 
-    automation_enrollment.method('Destroy') do |method|
+    automation_enrollments.method('Destroy') do |method|
       method.synopsis = 'Destroy a specific Automation Enrollment based on the signup'
       method.http_method = 'DELETE'
-      method.uri = '/v1/automation/:id/automation_enrollment/'
+      method.uri = '/v1/automations/:id/automation_enrollments/'
 
       method.parameter('signup_id') do |p|
         p.required = 'Y'
