@@ -7,7 +7,7 @@
           "MethodName": "Index",
           "Synopsis": "Shows the list of automation enrollments",
           "HTTPMethod": "GET",
-          "URI": "/v1/automations/:id/automation_enrollments/",
+          "URI": "/v1/automations/:id/automation_enrollments",
           "parameters": [
             {
               "Name": "id",
