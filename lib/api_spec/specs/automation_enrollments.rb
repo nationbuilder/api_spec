@@ -5,7 +5,7 @@ class ApiSpec::Spec
     automation_enrollments.method('Index') do |method|
       method.synopsis = 'Shows the list of automation enrollments'
       method.http_method = 'GET'
-      method.uri = '/v1/automations/:id/automation_enrollments/'
+      method.uri = '/v1/automations/:id/automation_enrollments'
 
       method.parameter('id') do |p|
         p.required = 'Y'
