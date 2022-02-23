@@ -2617,6 +2617,151 @@
               "Description": "The id of the petition"
             }
           ]
+        },
+        {
+          "MethodName": "Signatures Index",
+          "Synopsis": "Returns list of signatures in a petition",
+          "HTTPMethod": "GET",
+          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petition"
+            },
+            {
+              "Name": "petition_id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the petition"
+            }
+          ]
+        },
+        {
+          "MethodName": "Show Signature",
+          "Synopsis": "Returns the signature",
+          "HTTPMethod": "GET",
+          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petition"
+            },
+            {
+              "Name": "petition_id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the petition"
+            },
+            {
+              "Name": "id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the signature"
+            }
+          ]
+        },
+        {
+          "MethodName": "Create Signature",
+          "Synopsis": "Creates a new signature for a petition",
+          "HTTPMethod": "POST",
+          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petition"
+            },
+            {
+              "Name": "petition_id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the petition"
+            },
+            {
+              "Name": "body",
+              "Required": "Y",
+              "Default": null,
+              "Type": "json",
+              "Description": "JSON representation of the new signature"
+            }
+          ]
+        },
+        {
+          "MethodName": "Update Signature",
+          "Synopsis": "Updates a signature for a petition",
+          "HTTPMethod": "POST",
+          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petition"
+            },
+            {
+              "Name": "petition_id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the petition"
+            },
+            {
+              "Name": "id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the signature"
+            },
+            {
+              "Name": "body",
+              "Required": "Y",
+              "Default": null,
+              "Type": "json",
+              "Description": "JSON representation of the new signature"
+            }
+          ]
+        },
+        {
+          "MethodName": "Destroy Signature",
+          "Synopsis": "Removes signature from petition",
+          "HTTPMethod": "DELETE",
+          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petition"
+            },
+            {
+              "Name": "petition_id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the petition"
+            },
+            {
+              "Name": "id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the signature"
+            }
+          ]
         }
       ]
     },

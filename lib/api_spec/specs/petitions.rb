@@ -91,5 +91,125 @@ class ApiSpec::Spec
         p.description = 'The id of the petition'
       end
     end
+
+    petition.method('Signatures Index') do |method|
+      method.synopsis = 'Returns list of signatures in a petition'
+      method.http_method = 'GET'
+      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures'
+
+      method.parameter('site_slug') do |p|
+        p.required = 'Y'
+        p.type = 'string'
+        p.description = 'The site holding the petition'
+      end
+
+      method.parameter('petition_id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'The id of the petition'
+      end
+    end
+
+    petition.method('Show Signature') do |method|
+      method.synopsis = 'Returns the signature'
+      method.http_method = 'GET'
+      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id'
+
+      method.parameter('site_slug') do |p|
+        p.required = 'Y'
+        p.type = 'string'
+        p.description = 'The site holding the petition'
+      end
+
+      method.parameter('petition_id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'The id of the petition'
+      end
+
+      method.parameter('id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'The id of the signature'
+      end
+    end
+
+    petition.method('Create Signature') do |method|
+      method.synopsis = 'Creates a new signature for a petition'
+      method.http_method = 'POST'
+      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures'
+
+      method.parameter('site_slug') do |p|
+        p.required = 'Y'
+        p.type = 'string'
+        p.description = 'The site holding the petition'
+      end
+
+      method.parameter('petition_id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'The id of the petition'
+      end
+
+      method.parameter('body') do |p|
+        p.required = 'Y'
+        p.type = 'json'
+        p.description = 'JSON representation of the new signature'
+      end
+    end
+
+    petition.method('Update Signature') do |method|
+      method.synopsis = 'Updates a signature for a petition'
+      method.http_method = 'POST'
+      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id'
+
+      method.parameter('site_slug') do |p|
+        p.required = 'Y'
+        p.type = 'string'
+        p.description = 'The site holding the petition'
+      end
+
+      method.parameter('petition_id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'The id of the petition'
+      end
+
+      method.parameter('id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'The id of the signature'
+      end
+
+      method.parameter('body') do |p|
+        p.required = 'Y'
+        p.type = 'json'
+        p.description = 'JSON representation of the new signature'
+      end
+    end
+
+    petition.method('Destroy Signature') do |method|
+      method.synopsis = 'Removes signature from petition'
+      method.http_method = 'DELETE'
+      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id'
+
+      method.parameter('site_slug') do |p|
+        p.required = 'Y'
+        p.type = 'string'
+        p.description = 'The site holding the petition'
+      end
+
+      method.parameter('petition_id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'The id of the petition'
+      end
+
+      method.parameter('id') do |p|
+        p.required = 'Y'
+        p.type = 'int'
+        p.description = 'The id of the signature'
+      end
+    end
   end
 end
