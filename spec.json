@@ -2506,6 +2506,121 @@
       ]
     },
     {
+      "name": "Petitions",
+      "methods": [
+        {
+          "MethodName": "Index",
+          "Synopsis": "Returns the list of petitions in the site",
+          "HTTPMethod": "GET",
+          "URI": "/v1/sites/:site_slug/pages/petitions",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petitions"
+            }
+          ]
+        },
+        {
+          "MethodName": "Show",
+          "Synopsis": "Returns data for a single petition",
+          "HTTPMethod": "GET",
+          "URI": "/v1/sites/:site_slug/pages/petitions/:id",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petition"
+            },
+            {
+              "Name": "id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the petition"
+            }
+          ]
+        },
+        {
+          "MethodName": "Create",
+          "Synopsis": "Creates a new petition",
+          "HTTPMethod": "POST",
+          "URI": "/v1/sites/:site_slug/pages/petitions",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petition"
+            },
+            {
+              "Name": "body",
+              "Required": "Y",
+              "Default": null,
+              "Type": "json",
+              "Description": "JSON representation of the new petition"
+            }
+          ]
+        },
+        {
+          "MethodName": "Update",
+          "Synopsis": "Updates a single petition",
+          "HTTPMethod": "PUT",
+          "URI": "/v1/sites/:site_slug/pages/petitions/:id",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petition"
+            },
+            {
+              "Name": "id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the petition"
+            },
+            {
+              "Name": "body",
+              "Required": "Y",
+              "Default": null,
+              "Type": "json",
+              "Description": "JSON containing updates"
+            }
+          ]
+        },
+        {
+          "MethodName": "Destroy",
+          "Synopsis": "Removes a petition",
+          "HTTPMethod": "DELETE",
+          "URI": "/v1/sites/:site_slug/pages/petitions/:id",
+          "parameters": [
+            {
+              "Name": "site_slug",
+              "Required": "Y",
+              "Default": null,
+              "Type": "string",
+              "Description": "The site holding the petition"
+            },
+            {
+              "Name": "id",
+              "Required": "Y",
+              "Default": null,
+              "Type": "int",
+              "Description": "The id of the petition"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "Precincts",
       "methods": [
         {
