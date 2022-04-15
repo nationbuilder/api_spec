@@ -2520,6 +2520,27 @@
               "Default": null,
               "Type": "string",
               "Description": "The site holding the petitions"
+            },
+            {
+              "Name": "__token",
+              "Required": "N",
+              "Default": null,
+              "Type": "string",
+              "Description": "pagination token"
+            },
+            {
+              "Name": "__nonce",
+              "Required": "N",
+              "Default": null,
+              "Type": "string",
+              "Description": "pagination nonce"
+            },
+            {
+              "Name": "limit",
+              "Required": "N",
+              "Default": "10",
+              "Type": "int",
+              "Description": "maximum number of results to return"
             }
           ]
         },
@@ -2637,6 +2658,27 @@
               "Default": null,
               "Type": "int",
               "Description": "The id of the petition"
+            },
+            {
+              "Name": "__token",
+              "Required": "N",
+              "Default": null,
+              "Type": "string",
+              "Description": "pagination token"
+            },
+            {
+              "Name": "__nonce",
+              "Required": "N",
+              "Default": null,
+              "Type": "string",
+              "Description": "pagination nonce"
+            },
+            {
+              "Name": "limit",
+              "Required": "N",
+              "Default": "10",
+              "Type": "int",
+              "Description": "maximum number of results to return"
             }
           ]
         },
