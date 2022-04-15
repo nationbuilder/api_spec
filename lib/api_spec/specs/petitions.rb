@@ -6,11 +6,30 @@ class ApiSpec::Spec
       method.synopsis = 'Returns the list of petitions in the site'
       method.http_method = 'GET'
       method.uri = '/v1/sites/:site_slug/pages/petitions'
-
+        
       method.parameter('site_slug') do |p|
         p.required = 'Y'
         p.type = 'string'
         p.description = 'The site holding the petitions'
+      end
+      
+      method.parameter('__token') do |p|
+        p.required = 'N'
+        p.type = 'string'
+        p.description = 'pagination token'
+      end
+
+      method.parameter('__nonce') do |p|
+        p.required = 'N'
+        p.type = 'string'
+        p.description = 'pagination nonce'
+      end
+
+      method.parameter('limit') do |p|
+        p.required = 'N'
+        p.default = '10'
+        p.type = 'int'
+        p.description = 'maximum number of results to return'
       end
     end
 
@@ -107,6 +126,25 @@ class ApiSpec::Spec
         p.required = 'Y'
         p.type = 'int'
         p.description = 'The id of the petition'
+      end
+
+      method.parameter('__token') do |p|
+        p.required = 'N'
+        p.type = 'string'
+        p.description = 'pagination token'
+      end
+
+      method.parameter('__nonce') do |p|
+        p.required = 'N'
+        p.type = 'string'
+        p.description = 'pagination nonce'
+      end
+
+      method.parameter('limit') do |p|
+        p.required = 'N'
+        p.default = '10'
+        p.type = 'int'
+        p.description = 'maximum number of results to return'
       end
     end
 
