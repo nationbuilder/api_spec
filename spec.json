@@ -2512,7 +2512,7 @@
           "MethodName": "Index",
           "Synopsis": "Returns the list of petitions in the site",
           "HTTPMethod": "GET",
-          "URI": "/v1/sites/:site_slug/pages/petitions",
+          "URI": "/sites/:site_slug/pages/petitions",
           "parameters": [
             {
               "Name": "site_slug",
@@ -2548,7 +2548,7 @@
           "MethodName": "Show",
           "Synopsis": "Returns data for a single petition",
           "HTTPMethod": "GET",
-          "URI": "/v1/sites/:site_slug/pages/petitions/:id",
+          "URI": "/sites/:site_slug/pages/petitions/:id",
           "parameters": [
             {
               "Name": "site_slug",
@@ -2570,7 +2570,7 @@
           "MethodName": "Create",
           "Synopsis": "Creates a new petition",
           "HTTPMethod": "POST",
-          "URI": "/v1/sites/:site_slug/pages/petitions",
+          "URI": "/sites/:site_slug/pages/petitions",
           "parameters": [
             {
               "Name": "site_slug",
@@ -2592,7 +2592,7 @@
           "MethodName": "Update",
           "Synopsis": "Updates a single petition",
           "HTTPMethod": "PUT",
-          "URI": "/v1/sites/:site_slug/pages/petitions/:id",
+          "URI": "/sites/:site_slug/pages/petitions/:id",
           "parameters": [
             {
               "Name": "site_slug",
@@ -2621,7 +2621,7 @@
           "MethodName": "Destroy",
           "Synopsis": "Removes a petition",
           "HTTPMethod": "DELETE",
-          "URI": "/v1/sites/:site_slug/pages/petitions/:id",
+          "URI": "/sites/:site_slug/pages/petitions/:id",
           "parameters": [
             {
               "Name": "site_slug",
@@ -2643,7 +2643,7 @@
           "MethodName": "Signatures Index",
           "Synopsis": "Returns list of signatures in a petition",
           "HTTPMethod": "GET",
-          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures",
+          "URI": "/sites/:site_slug/pages/petitions/:petition_id/signatures",
           "parameters": [
             {
               "Name": "site_slug",
@@ -2686,7 +2686,7 @@
           "MethodName": "Show Signature",
           "Synopsis": "Returns the signature",
           "HTTPMethod": "GET",
-          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id",
+          "URI": "/sites/:site_slug/pages/petitions/:petition_id/signatures/:id",
           "parameters": [
             {
               "Name": "site_slug",
@@ -2715,7 +2715,7 @@
           "MethodName": "Create Signature",
           "Synopsis": "Creates a new signature for a petition",
           "HTTPMethod": "POST",
-          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures",
+          "URI": "/sites/:site_slug/pages/petitions/:petition_id/signatures",
           "parameters": [
             {
               "Name": "site_slug",
@@ -2744,7 +2744,7 @@
           "MethodName": "Update Signature",
           "Synopsis": "Updates a signature for a petition",
           "HTTPMethod": "POST",
-          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id",
+          "URI": "/sites/:site_slug/pages/petitions/:petition_id/signatures/:id",
           "parameters": [
             {
               "Name": "site_slug",
@@ -2780,7 +2780,7 @@
           "MethodName": "Destroy Signature",
           "Synopsis": "Removes signature from petition",
           "HTTPMethod": "DELETE",
-          "URI": "/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id",
+          "URI": "/sites/:site_slug/pages/petitions/:petition_id/signatures/:id",
           "parameters": [
             {
               "Name": "site_slug",
