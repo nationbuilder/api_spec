@@ -5,7 +5,7 @@ class ApiSpec::Spec
     petition.method('Index') do |method|
       method.synopsis = 'Returns the list of petitions in the site'
       method.http_method = 'GET'
-      method.uri = '/v1/sites/:site_slug/pages/petitions'
+      method.uri = '/sites/:site_slug/pages/petitions'
         
       method.parameter('site_slug') do |p|
         p.required = 'Y'
@@ -36,7 +36,7 @@ class ApiSpec::Spec
     petition.method('Show') do |method|
       method.synopsis = 'Returns data for a single petition'
       method.http_method = 'GET'
-      method.uri = '/v1/sites/:site_slug/pages/petitions/:id'
+      method.uri = '/sites/:site_slug/pages/petitions/:id'
 
       method.parameter('site_slug') do |p|
         p.required = 'Y'
@@ -54,7 +54,7 @@ class ApiSpec::Spec
     petition.method('Create') do |method|
       method.synopsis = 'Creates a new petition'
       method.http_method = 'POST'
-      method.uri = '/v1/sites/:site_slug/pages/petitions'
+      method.uri = '/sites/:site_slug/pages/petitions'
 
       method.parameter('site_slug') do |p|
         p.required = 'Y'
@@ -72,7 +72,7 @@ class ApiSpec::Spec
     petition.method('Update') do |method|
       method.synopsis = 'Updates a single petition'
       method.http_method = 'PUT'
-      method.uri = '/v1/sites/:site_slug/pages/petitions/:id'
+      method.uri = '/sites/:site_slug/pages/petitions/:id'
 
       method.parameter('site_slug') do |p|
         p.required = 'Y'
@@ -96,7 +96,7 @@ class ApiSpec::Spec
     petition.method('Destroy') do |method|
       method.synopsis = 'Removes a petition'
       method.http_method = 'DELETE'
-      method.uri = '/v1/sites/:site_slug/pages/petitions/:id'
+      method.uri = '/sites/:site_slug/pages/petitions/:id'
 
       method.parameter('site_slug') do |p|
         p.required = 'Y'
@@ -114,7 +114,7 @@ class ApiSpec::Spec
     petition.method('Signatures Index') do |method|
       method.synopsis = 'Returns list of signatures in a petition'
       method.http_method = 'GET'
-      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures'
+      method.uri = '/sites/:site_slug/pages/petitions/:petition_id/signatures'
 
       method.parameter('site_slug') do |p|
         p.required = 'Y'
@@ -151,7 +151,7 @@ class ApiSpec::Spec
     petition.method('Show Signature') do |method|
       method.synopsis = 'Returns the signature'
       method.http_method = 'GET'
-      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id'
+      method.uri = '/sites/:site_slug/pages/petitions/:petition_id/signatures/:id'
 
       method.parameter('site_slug') do |p|
         p.required = 'Y'
@@ -175,7 +175,7 @@ class ApiSpec::Spec
     petition.method('Create Signature') do |method|
       method.synopsis = 'Creates a new signature for a petition'
       method.http_method = 'POST'
-      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures'
+      method.uri = '/sites/:site_slug/pages/petitions/:petition_id/signatures'
 
       method.parameter('site_slug') do |p|
         p.required = 'Y'
@@ -199,7 +199,7 @@ class ApiSpec::Spec
     petition.method('Update Signature') do |method|
       method.synopsis = 'Updates a signature for a petition'
       method.http_method = 'POST'
-      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id'
+      method.uri = '/sites/:site_slug/pages/petitions/:petition_id/signatures/:id'
 
       method.parameter('site_slug') do |p|
         p.required = 'Y'
@@ -229,7 +229,7 @@ class ApiSpec::Spec
     petition.method('Destroy Signature') do |method|
       method.synopsis = 'Removes signature from petition'
       method.http_method = 'DELETE'
-      method.uri = '/v1/sites/:site_slug/pages/petitions/:petition_id/signatures/:id'
+      method.uri = '/sites/:site_slug/pages/petitions/:petition_id/signatures/:id'
 
       method.parameter('site_slug') do |p|
         p.required = 'Y'
