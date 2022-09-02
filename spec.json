@@ -1133,7 +1133,7 @@
               "Required": "Y",
               "Default": null,
               "Type": "json",
-              "Description": "A JSON representation of the new post"
+              "Description": "A JSON representation of the new post<br>(Note: 'person_id' attribute is required)"
             }
           ]
         },
@@ -1169,7 +1169,7 @@
               "Required": "Y",
               "Default": null,
               "Type": "json",
-              "Description": "JSON attributes for updating the RSVP"
+              "Description": "JSON attributes for updating the RSVP<br>(Note: 'person_id' attribute is required)"
             }
           ]
         }

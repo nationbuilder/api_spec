@@ -194,7 +194,8 @@ class ApiSpec::Spec
       method.parameter('body') do |p|
         p.required = 'Y'
         p.type = 'json'
-        p.description = 'A JSON representation of the new post'
+        p.description = 'A JSON representation of the new post' \
+                        "<br>(Note: 'person_id' attribute is required)"
       end
     end
 
@@ -224,7 +225,8 @@ class ApiSpec::Spec
       method.parameter('body') do |p|
         p.required = 'Y'
         p.type = 'json'
-        p.description = 'JSON attributes for updating the RSVP'
+        p.description = 'JSON attributes for updating the RSVP' \
+                        "<br>(Note: 'person_id' attribute is required)"
       end
     end
   end
