@@ -18,3 +18,9 @@ Locate the file in `lib/api_spec/specs` that corresponds to the API
 you're modifying. With the DSL used in the file, make your changes. In
 the root project directory, run `rake` to update the `spec.json`
 file. Commit your changes.
+
+This repo gets pulled into the 
+[`api_explorer` repo](https://github.com/3dna/api_explorer) as a git 
+subtree in order to generate our public API docs. For more information 
+on pulling `api_spec` changes into API Explorer, please refer to  
+[that repo's README](https://github.com/3dna/api_explorer#updating-api-specification).
