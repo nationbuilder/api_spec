@@ -4,6 +4,7 @@ module ApiSpec; end
 
 require 'generator'
 
+require 'specs/automation_enrollments'
 require 'specs/basic_pages'
 require 'specs/blog_posts'
 require 'specs/blogs'
